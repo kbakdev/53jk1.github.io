@@ -1,6 +1,6 @@
 {
-  "name": "53jk1.github.io",
-  "homepage": "https://53jk1.github.io",
+  "name": "kacperbak.pl",
+  "homepage": "https://kacperbak.pl",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,8 +20,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
