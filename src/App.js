@@ -5,7 +5,7 @@ import AboutPage from './pages/AboutPage';
 import SkillsPage from './pages/SkillsPage';
 import PortfolioPage from './pages/PortfolioPage';
 import NotFoundPage from './pages/NotFoundPage';
-import Header from './components/Header';
+import MobileNav from './components/MobileNav';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -13,7 +13,7 @@ function App() {
     return (
         <div className="app">
             <BrowserRouter>
-                <Header />
+                <MobileNav />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
