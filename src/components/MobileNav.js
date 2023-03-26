@@ -25,12 +25,6 @@ const mobileNavStyle = {
     zIndex: '1'
 };
 
-const messageStyle = {
-    fontSize: '2rem',
-    fontWeight: 'bold',
-    marginBottom: '20px'
-}
-
 const closeButtonStyle = {
     position: 'absolute',
     top: '20px',
@@ -76,9 +70,6 @@ const MobileNav = () => {
                     </Link>
                     <Link to="/skills" style={linkStyle} onClick={handleCloseMenu}>
                         Skills
-                    </Link>
-                    <Link to="/portfolio" style={linkStyle} onClick={handleCloseMenu}>
-                        Portfolio
                     </Link>
                 </div>
             )}
