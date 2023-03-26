@@ -1,18 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import SkillsPage from './pages/SkillsPage';
+import PortfolioPage from './pages/PortfolioPage';
+import NotFoundPage from './pages/NotFoundPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p></p>
-        <h1 itemprop="name">Kacper "53jk1" Bąk</h1>
-        <h2 itemprop="description">Software Engineer &amp; Backend Developer</h2>
-        <h3>I do it cuz I love it.</h3>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app">
+            <BrowserRouter>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/skills" element={<SkillsPage />} />
+                    <Route path="/portfolio" element={<PortfolioPage />} />
+                    <Route path="*" element={<NotFoundPage />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
