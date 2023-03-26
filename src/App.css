@@ -1,18 +1,8 @@
+/* App container */
 .app {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-}
-
-/* Header styles */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -20,6 +10,7 @@ header {
     font-weight: bold;
 }
 
+/* Navigation styles */
 .nav {
     display: flex;
     gap: 1rem;
@@ -37,7 +28,6 @@ header {
 }
 
 /* Footer styles */
-
 footer {
     padding: 1rem;
     background-color: #f8f8f8;
@@ -47,4 +37,8 @@ footer {
 .footer-text {
     font-size: 0.9rem;
     color: #666;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }

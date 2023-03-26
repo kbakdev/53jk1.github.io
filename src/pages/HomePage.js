@@ -13,9 +13,13 @@ const HomePage = () => {
 };
 
 const HomeContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  
 `;
 
 const ProfilePic = styled.img`
