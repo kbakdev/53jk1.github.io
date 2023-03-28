@@ -15,7 +15,6 @@ function App() {
 
     return (
         <div className="app">
-            <BrowserRouter>
                 {isMobile ? <MobileNav /> : <Header />}
                 <Routes>
                     <Route path="/" element={<HomePage />} />
@@ -24,7 +23,6 @@ function App() {
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
                 <Footer />
-            </BrowserRouter>
         </div>
     );
 }
